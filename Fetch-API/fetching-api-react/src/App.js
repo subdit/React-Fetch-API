@@ -4,7 +4,7 @@ import Form from './Form';
 function App() {
   const API_URL = 'https://jsonplaceholder.typicode.com/';
   const [reqType, setReqType] = useState('users');
-  const [fetchError, setFetchError] = useState(null);
+  // const [fetchError, setFetchError] = useState(null);
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -12,21 +12,22 @@ function App() {
       try {
         const response = await fetch(`${API_URL}${reqType}`);
         const data = await response.json();
-        if (response.ok) throw Error('Did not receive the data');
+        // if (response.ok) throw Error('Did not receive the data');
         setItems(data);
-        setFetchError(null);
+        // setFetchError(null);
       } catch (err) {
         console.log(err);
-        setFetchError();
+        // setFetchError();
       }
     };
     fetchItems();
   }, [reqType]);
 
   return (
-    <header>
-      <Form reqType={reqType} setRegType={setReqType} />
-    </header>
+    <div className='App'>
+      <h3>hello..From Form</h3>
+      <Form reqType={reqType} setReqType={setReqType} />
+    </div>
   );
 }
 
