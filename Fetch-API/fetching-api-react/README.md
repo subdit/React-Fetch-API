@@ -1,3 +1,7 @@
+# This application is using React/useState/useEffect
+
+To fetch data from the api and map out to the in the table to show in the Row and Cell.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
