@@ -1,6 +1,6 @@
 # This application is using React/useState/useEffect
 
-To fetch data from the api and map out to the in the table to show in the Row and Cell.
+To fetch data from the api and map out the data in the table to show in the Row and Cell.
 
 # Getting Started with Create React App
 
