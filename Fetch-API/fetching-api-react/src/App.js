@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Form from './Form';
-import List from './List';
+// import List from './List';
+import Table from './Table';
+
 function App() {
   const API_URL = 'https://jsonplaceholder.typicode.com/';
   const [reqType, setReqType] = useState('users');
@@ -30,7 +32,8 @@ function App() {
       {fetchError && <p style={{ color: 'red' }}>{`Error: ${fetchError}`}</p>}
 
       <Form reqType={reqType} setReqType={setReqType} />
-      <List items={items} />
+      {/* <List items={items} /> */}
+      <Table items={items} />
     </main>
   );
 }

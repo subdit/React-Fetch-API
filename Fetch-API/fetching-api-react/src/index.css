@@ -36,6 +36,7 @@ button.selected {
 }
 ul {
   padding: 3rem 2 rem 1rem;
+  margin: 1rem;
 }
 li {
   margin-bottom: 1rem;
